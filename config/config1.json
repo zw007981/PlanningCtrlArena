@@ -1,0 +1,42 @@
+{
+    "config_name": "急转弯",
+    "cars": [
+        {
+            "id": "0",
+            "start_pose": {
+                "x": 0,
+                "y": 0.5,
+                "theta": 0.0
+            },
+            "v": 0.0
+        }
+    ],
+    "reference_lines": [
+        {
+            "control_points": [
+                {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 16.0,
+                    "y": -4.0
+                },
+                {
+                    "x": 0.0,
+                    "y": -8.0
+                }
+            ]
+        }
+    ],
+    "obstacles": [
+        {
+            "type": "static",
+            "center": {
+                "x": 5.0,
+                "y": -6.5
+            },
+            "radius": 0.2
+        }
+    ]
+}

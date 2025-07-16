@@ -1,0 +1,88 @@
+{
+    "config_name": "十字路口",
+    "cars": [
+        {
+            "id": "0",
+            "start_pose": {
+                "x": -7.0,
+                "y": 0.0,
+                "theta": 0.0
+            },
+            "v": 0.0,
+            "target_reference_line_id": 0,
+            "level": "adaptive"
+        },
+        {
+            "id": "1",
+            "start_pose": {
+                "x": -2.0,
+                "y": 5.0,
+                "theta": -1.5707
+            },
+            "v": 0.0,
+            "target_reference_line_id": 1,
+            "level": "1"
+        },
+        {
+            "id": "2",
+            "start_pose": {
+                "x": 3.0,
+                "y": -10.0,
+                "theta": 1.5707
+            },
+            "v": 0.0,
+            "target_reference_line_id": 2,
+            "level": "2"
+        }
+    ],
+    "reference_lines": [
+        {
+            "control_points": [
+                {
+                    "x": -8.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 9.0,
+                    "y": 0.0
+                }
+            ]
+        },
+        {
+            "control_points": [
+                {
+                    "x": -2.0,
+                    "y": 10.0
+                },
+                {
+                    "x": -2.0,
+                    "y": 0.0
+                },
+                {
+                    "x": -2.0,
+                    "y": -10.0
+                }
+            ]
+        },
+        {
+            "control_points": [
+                {
+                    "x": 3.0,
+                    "y": -10.0
+                },
+                {
+                    "x": 3.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 3.0,
+                    "y": 10.0
+                }
+            ]
+        }
+    ]
+}

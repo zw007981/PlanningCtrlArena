@@ -1,0 +1,53 @@
+{
+    "config_name": "CMPC算法配置",
+    "nom_scaling": 0.75,
+    "cars": [
+        {
+            "id": "0",
+            "start_pose": {
+                "x": 0.0,
+                "y": 2.0,
+                "theta": 0.0
+            },
+            "v": 2.0
+        }
+    ],
+    "reference_lines": [
+        {
+            "control_points": [
+                {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 8.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 15.0,
+                    "y": 0.0
+                }
+            ]
+        }
+    ],
+    "obstacles": [
+        {
+            "type": "uncertain",
+            "center": {
+                "x": 5.0,
+                "y": 0.0
+            },
+            "radius": 0.6,
+            "will_appear": false
+        },
+        {
+            "type": "uncertain",
+            "center": {
+                "x": 10.0,
+                "y": 0.0
+            },
+            "radius": 0.6,
+            "will_appear": true
+        }
+    ]
+}

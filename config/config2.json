@@ -1,0 +1,104 @@
+{
+    "config_name": "急转弯",
+    "cars": [
+        {
+            "id": "0",
+            "start_pose": {
+                "x": 0.0,
+                "y": 5.0,
+                "theta": 0.0
+            },
+            "v": 0.0
+        }
+    ],
+    "reference_lines": [
+        {
+            "control_points": [
+                {
+                    "x": 0.0,
+                    "y": 4.0
+                },
+                {
+                    "x": 5.0,
+                    "y": 8.0
+                },
+                {
+                    "x": 10.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 15.0,
+                    "y": 4.0
+                }
+            ]
+        }
+    ],
+    "obstacles": [
+        {
+            "type": "dynamic",
+            "center": {
+                "x": 5.0,
+                "y": -6.5
+            },
+            "radius": 0.2,
+            "?route": "动态障碍物的可能路径",
+            "route": [
+                {
+                    "position": {
+                        "x": 0.0,
+                        "y": 0.0
+                    },
+                    "children": [
+                        {
+                            "x": 5.0,
+                            "y": 0.0
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 5.0,
+                        "y": 0.0
+                    },
+                    "children": [
+                        {
+                            "x": 10.0,
+                            "y": 0.0
+                        },
+                        {
+                            "x": 5.0,
+                            "y": 5.0
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 10.0,
+                        "y": 0.0
+                    }
+                },
+                {
+                    "position": {
+                        "x": 5.0,
+                        "y": 5.0
+                    },
+                    "children":
+                    [
+                        {
+                            "x": 10.0,
+                            "y": 5.0
+                        }
+                    ]
+                },
+                {
+                    "position": {
+                        "x": 10.0,
+                        "y": 5.0
+                    }
+                }
+            ],
+            "?selection_method": "在分岔口选择路径的方法",
+            "selection_method": "random"
+        }
+    ]
+}
