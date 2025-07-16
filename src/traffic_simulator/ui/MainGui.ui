@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>999</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>TrafficSimulator</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>20</width>
+    <height>200</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="2">
+     <widget class="QPushButton" name="generate_report_button">
+      <property name="text">
+       <string>Gen Report</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="9">
+     <widget class="PlotWidget" name="graph_widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>35</horstretch>
+        <verstretch>8</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="7">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>174</width>
+        <height>17</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="8">
+     <widget class="QTextBrowser" name="information_browser3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>3</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="6">
+     <widget class="QPushButton" name="accelerate_button">
+      <property name="text">
+       <string>Accelerate</string>
+      </property>
+      <property name="shortcut">
+       <string>Up</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3" colspan="2">
+     <widget class="QPushButton" name="stop_or_start_button">
+      <property name="text">
+       <string>Start/Stop</string>
+      </property>
+      <property name="shortcut">
+       <string>Space</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="decelerate_button">
+      <property name="text">
+       <string>Decelerate</string>
+      </property>
+      <property name="shortcut">
+       <string>Down</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Orientation::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>174</width>
+        <height>23</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="5">
+     <widget class="QPushButton" name="restart_button">
+      <property name="text">
+       <string>Restart</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4" colspan="5">
+     <widget class="QTextBrowser" name="information_browser2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>8</horstretch>
+        <verstretch>1</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="4">
+     <widget class="QPlainTextEdit" name="information_browser1">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>999</width>
+     <height>33</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="help_menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="open_README"/>
+    <addaction name="about_code"/>
+   </widget>
+   <addaction name="help_menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="open_README">
+   <property name="text">
+    <string>使用说明</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="about_code">
+   <property name="text">
+    <string>关于这个程序</string>
+   </property>
+   <property name="shortcut">
+    <string>F4</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QWidget</extends>
+   <header>pyqtgraph</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
