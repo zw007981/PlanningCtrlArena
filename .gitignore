@@ -9,3 +9,5 @@ src/backup/
 doc/
 *prof
 profile*
+AL_iLQR.py
+test_augmented_lagrangian.py
