@@ -31,7 +31,7 @@
     pip install -r requirements.txt
     ```
 
-- 2. 运行示例：从 `src\controller` 目录下找到对应的算法运行即可。运行完成后日志会存放在 `log` 目录下，另外模拟过程的动画会以gif格式存放在 `log` 目录下，模拟过程中车辆的运动数据也会以json格式存放在这个目录下。
+- 2. 运行示例：从 `src\algo` 目录下找到对应的算法运行即可。运行完成后日志会存放在 `log` 目录下，另外模拟过程的动画会以gif格式存放在 `log` 目录下，模拟过程中车辆的运动数据也会以json格式存放在这个目录下。
 
 ## 3. Config
 
@@ -140,7 +140,7 @@
 
 见 `src\controller\MPC.py` ，运行示例如下：
 
-![mpc_example](./fig/mpc.gif)
+![mpc_example](./fig/MPC.gif)
 
 ### 4.5. CMPC(Contingency Model Predictive Control)
 
